@@ -41,7 +41,8 @@ except ValueError:
     sys.exit()
 
 print("What do you want to buy?")
-print("1 - coke\n2 - cigarettes\n3 - sandwich\n4 - water\n5 - beer")
+print("1 - coke ($1.20)\n2 - cigarettes ($5.80)\n3 - sandwich ($2.40)\n"\
+      +"4 - water ($0.90)\n5 - beer ($1.80)")
 choice = input("Please enter your choice: ")
 
 
