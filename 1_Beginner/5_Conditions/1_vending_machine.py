@@ -10,6 +10,8 @@ instead of "coke"). Design a mechanism that prevents customers under 18 from
 buying cigaretts and alcohol. Additionally, check if the person has enough
 money to buy a product.
 """
+import sys
+
 
 prices = {
     "coke": 1.20,
@@ -35,6 +37,8 @@ try:
     age = int(input("Please enter your age: "))
 except ValueError:
     print("This is not a valid age.")
+    # terminates the script if the age is invalid
+    sys.exit()
 
 print("What do you want to buy?")
 print("1 - coke\n2 - cigarettes\n3 - sandwich\n4 - water\n5 - beer")
