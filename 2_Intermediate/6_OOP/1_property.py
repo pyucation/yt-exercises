@@ -23,6 +23,7 @@ class Account:
         self.pin = pin
         self.balance = balance
         self.overdraft = False
+        self.pin_correct = False
 
     def transfer_money(self, account, amount):
         self.balance -= amount
@@ -38,6 +39,12 @@ class Account:
             self.overdraft = True
         else:
             self.overdraft = False
+
+    def enter_pin(self, pin):
+        if pin == self.pin:
+            self.pin_correct = True
+            return True
+        return False
 
 
 
